@@ -12,7 +12,7 @@
     ...
     implementation('ml.sky233.suiteki:hitokoto:1.0.0')   
     implementation('com.squareup.okhttp3:okhttp:4.9.1')
-}
+  }
 ```
 
 #### 在Java文件中引进
