@@ -3,7 +3,7 @@
 ---
 
 ## 刷新句子
-``` Java
+``` java
     HitokotoUtils.set(URL, URL_DEFAULT);//默认为国内路线
     HitokotoUtils.set(TYPE, TYPE_DEFAULT);//默认类型为动画
     HitokotoUtils.set(CHARSET, CHARSET_DEFAULT);//默认编码UTF-8,尽量不要修改
@@ -41,7 +41,7 @@
 ---
 
 #### 登录账号
-``` Java
+``` java
     String email = "example@example.com", password = "example123";
     String[] str = HitokotoUtils.login(email,password);
     if (str[LOGIN_STATUS].equals(RESULT_OK)) System.out.print(str[LOGIN_TOKEN]);//打印令牌
@@ -53,7 +53,7 @@
 
 ---
 ## 刷新令牌
-``` Java
+``` java
     if (HitokotoUtils.refreshToken().equals(RESULT_OK)){
         System.out.print(HitokotoUtils.getToken);//刷新成功并打印令牌
     }
@@ -66,7 +66,7 @@
 ---
 
 ## 喜欢列表
-``` Java
+``` java
     if (HitokotoUtils.getLike(LIKE_OFFSET_DEFAULT,LIKE_LIMIT_DEFAULT).equal(RESULT_OK)){
         System.out.print(HitokotoUtils.getLikeString());//刷新成功并打印列表
     }
@@ -111,7 +111,7 @@
 ```
 ---
 ## 添加句子
-``` Java
+``` java
     HitokotoUtils.set(TYPE,TYPE_DEFAULT);
     HitokotoUtils.set(HITOKOTO,"TEST");
     HitokotoUtils.set(FROM,"TEST");
