@@ -6,7 +6,7 @@
 
 ---
 
-#### 在build.gradle中引进
+## 在build.gradle中引进
 ``` java
   dependencies {
     ...
@@ -15,12 +15,15 @@
   }
 ```
 
-#### 在Java文件中引进
+## 在Java文件中引进
 ``` java
     ...
     import static ml.sky233.hitokoto.Hitokoto.*;
     import ml.sky233.hitokoto.HitokotoUtils;
     ...
 ```
+
+## 获取Demo
+> [点我下载](https://github.com/sky130/Hitokoto-Utils-Java/releases/download/Demo1/Hitokoto-Demo.zip)
 
 ###### 完成上面的步骤后,你可以在你的项目中使用 **Hitokoto-Utils-Java** 了
