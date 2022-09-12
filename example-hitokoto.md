@@ -123,3 +123,63 @@
 ``` log
     200
 ```
+
+---
+## 通知设置
+
+``` Java
+    String str[] = HitokotoUtils.getSetting();//获取设置配置，在设置前必须调用，否则报错
+    if (str[0].equals("200")) {//判断是否获取配置，避免报错
+        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//全局通知
+        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//一言提交通知
+        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//一言审核通知
+        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//投票创建通知
+        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//投票结果通知
+        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//审核员每日报告
+        System.out.print(HitokotoUtils.putSetting());//设置
+    }
+```
+
+**打印结果**
+``` log
+    200
+```
+
+---
+## 展示列表
+
+> 示例将使用Eson(EsayJson)和[喜欢列表的Json](#喜欢列表)来演示
+
+``` Java
+    ...
+    import ml.sky233.hitokoto.EsonUtils;
+    ...
+```
+
+!> **LIKE_OFFSET_DEFAULT**默认为0 | **LIKE_LIMIT_DEFAULT**默认为20,不能小于20大于200
+
+``` Java
+    if (HitokotoUtils.getUserLike(LIKE_OFFSET_DEFAULT,LIKE_LIMIT_DEFAULT).equals("200")) {//判断是否获取，避免报错
+        Object object = HitokotoUtils.getObject();//获取Eson对象
+        int length = EsonUtils.getArrayLength(object);//获取句子数量
+        String[] hitokoto;//分类
+        String[] uuid;
+        String[] form_who;
+        for (int a = 0; length > a; a++) {
+            Object obj = EsonUtils.getArrayObject(object,a);
+            hitokoto[a] =  EsonUtils.getObjectText(obj,"hitokoto");
+            uuid[a] =  EsonUtils.getObjectText(obj,"uuid");
+            form_who[a] =  EsonUtils.getObjectText(obj,"form_who");
+        }
+        System.out.print(String.valueOf(hitokoto));
+        System.out.print(String.valueOf(uuid));
+        System.out.print(String.valueOf(form_who));
+    }
+```
+
+**打印结果**
+``` log
+    [若汝无介意，愿作耳边墙。 思君无情拒，唯吾孤自哀。希愿回心意，眷恋越星海。欲采栀子花，赠予手心中。,满招损，谦受益。]
+    [c8b35bc2-bbb9-4b3f-a1ed-2b3e355bee37,85e0bd7a-0fab-4719-9b56-21a34776b2f1]
+    [Sky233,null]
+```
