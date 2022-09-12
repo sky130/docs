@@ -130,12 +130,12 @@
 ``` java
     String str[] = HitokotoUtils.getSetting();//获取设置配置，在设置前必须调用，否则报错
     if (str[0].equals("200")) {//判断是否获取配置，避免报错
-        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//全局通知
-        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//一言提交通知
-        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//一言审核通知
-        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//投票创建通知
-        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//投票结果通知
-        HitokotoUtils.setNotification(SETTING_GLOBAL,true);//审核员每日报告
+        HitokotoUtils.setNotification(SETTING_GLOBAL, true);//全局通知
+        HitokotoUtils.setNotification(SETTING_HITOKOTO_APPENDED, true);//一言提交通知
+        HitokotoUtils.setNotification(SETTING_HITOKOTO_REVIEWED, true);//一言审核通知
+        HitokotoUtils.setNotification(SETTING_POLL_CREATED, true);//投票创建通知
+        HitokotoUtils.setNotification(SETTING_POLL_RESULT, true);//投票结果通知
+        HitokotoUtils.setNotification(SETTING_POLL_DAILY_REPORT, true);//审核员每日报告
         System.out.print(HitokotoUtils.putSetting());//设置
     }
 ```
