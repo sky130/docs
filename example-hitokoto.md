@@ -159,17 +159,17 @@
 !> **LIKE_OFFSET_DEFAULT**默认为0 | **LIKE_LIMIT_DEFAULT**默认为20,不能小于20大于200
 
 ``` Java
-    if (HitokotoUtils.getUserLike(LIKE_OFFSET_DEFAULT,LIKE_LIMIT_DEFAULT).equals("200")) {//判断是否获取，避免报错
-        Object object = HitokotoUtils.getObject();//获取Eson对象
+    if (HitokotoUtils.getUserLike(LIKE_OFFSET_DEFAULT, LIKE_LIMIT_DEFAULT).equals("200")) {//判断是否获取，避免报错
+        Object object = HitokotoUtils.getJsonObject();//获取Eson对象
         int length = EsonUtils.getArrayLength(object);//获取句子数量
-        String[] hitokoto;//分类
-        String[] uuid;
-        String[] form_who;
+        String[] hitokoto = new String[length];//分类
+        String[] uuid = new String[length];
+        String[] form_who = new String[length];
         for (int a = 0; length > a; a++) {
-            Object obj = EsonUtils.getArrayObject(object,a);
-            hitokoto[a] =  EsonUtils.getObjectText(obj,"hitokoto");
-            uuid[a] =  EsonUtils.getObjectText(obj,"uuid");
-            form_who[a] =  EsonUtils.getObjectText(obj,"form_who");
+            Object obj = EsonUtils.getArrayObject(object, a);
+            hitokoto[a] = EsonUtils.getObjectText(obj, "hitokoto");
+            uuid[a] = EsonUtils.getObjectText(obj, "uuid");
+            form_who[a] = EsonUtils.getObjectText(obj, "form_who");
         }
         System.out.print(String.valueOf(hitokoto));
         System.out.print(String.valueOf(uuid));
