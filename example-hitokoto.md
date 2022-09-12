@@ -164,12 +164,12 @@
         int length = EsonUtils.getArrayLength(object);//获取句子数量
         String[] hitokoto = new String[length];//分类
         String[] uuid = new String[length];
-        String[] form_who = new String[length];
+        String[] from_who = new String[length];
         for (int a = 0; length > a; a++) {
             Object obj = EsonUtils.getArrayObject(object, a);
             hitokoto[a] = EsonUtils.getObjectText(obj, "hitokoto");
             uuid[a] = EsonUtils.getObjectText(obj, "uuid");
-            form_who[a] = EsonUtils.getObjectText(obj, "form_who");
+            from_who[a] = EsonUtils.getObjectText(obj, "from_who");
         }
         System.out.print(String.valueOf(hitokoto));
         System.out.print(String.valueOf(uuid));
