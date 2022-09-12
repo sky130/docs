@@ -72,7 +72,7 @@
     }
 ```
 **打印结果**
-需要自己解析Json,可以使用配套的Eson(EasyJson)进行解析
+需要自己解析Json,可以使用配套的Eson(EasyJson)进行[解析](#展示列表)
 
 ``` json
     {
@@ -148,7 +148,7 @@
 ---
 ## 展示列表
 
-> 示例将使用Eson(EsayJson)和[喜欢列表的Json](#喜欢列表)来演示
+> 示例将使用Eson(EasyJson)和[喜欢列表的Json](#喜欢列表)来演示
 
 ``` java
     ...
