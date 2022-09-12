@@ -127,7 +127,7 @@
 ---
 ## 通知设置
 
-``` Java
+``` java
     String str[] = HitokotoUtils.getSetting();//获取设置配置，在设置前必须调用，否则报错
     if (str[0].equals("200")) {//判断是否获取配置，避免报错
         HitokotoUtils.setNotification(SETTING_GLOBAL,true);//全局通知
@@ -150,7 +150,7 @@
 
 > 示例将使用Eson(EsayJson)和[喜欢列表的Json](#喜欢列表)来演示
 
-``` Java
+``` java
     ...
     import ml.sky233.hitokoto.EsonUtils;
     ...
@@ -158,7 +158,7 @@
 
 !> **LIKE_OFFSET_DEFAULT**默认为0 | **LIKE_LIMIT_DEFAULT**默认为20,不能小于20大于200
 
-``` Java
+``` java
     if (HitokotoUtils.getUserLike(LIKE_OFFSET_DEFAULT, LIKE_LIMIT_DEFAULT).equals("200")) {//判断是否获取，避免报错
         Object object = HitokotoUtils.getJsonObject();//获取Eson对象
         int length = EsonUtils.getArrayLength(object);//获取句子数量
