@@ -3,3 +3,5 @@
   * [参数变量](/variable-hitokoto.md)
   * [示例写法](/example-hitokoto.md)
   * [所有方法](/all-hitokoto.md)
+* [Suiteki-Lib 开发](/suiteki.md)
+  * [快速配置](/start-suiteki.md)
