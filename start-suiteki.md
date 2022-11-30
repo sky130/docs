@@ -16,8 +16,7 @@
 ## 在Java文件中引进
 ``` java
     ...
-    import static ml.sky233.hitokoto.Hitokoto.*;
-    import ml.sky233.hitokoto.HitokotoUtils;
+    import static ml.sky233.suiteki.*;
     ...
 ```
 
