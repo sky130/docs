@@ -5,7 +5,8 @@
 
 > 先通过 **loginHuami()** 登录华米(ZeppLife/Zepp)账号
 >
-> 支持***小米账号**登录或**华米账号**(邮箱账号)登录
+> 支持**小米账号**登录或**华米账号**(邮箱账号)登录
+
 登录代码如下
 ``` java
     Suiteki.loginHuami("example@examlpe.com","exmalpe123");//华米账号登录
@@ -14,7 +15,7 @@
     Suiteki.loginHuami("code");//小米账号登录
     //传入小米账号返回的 Code 参数 即可登录华米账号
 ```
-其中 Code 的获取方式如下
+## Code 获取方式
 > 先在**浏览器**中访问下面的链接
 ``` 
     https://account.xiaomi.com/fe/service/oauth2/authorize?skip_confirm=false&client_id=2882303761517383915&pt=0&scope=1+6000+16001+20000&redirect_uri=https%3A%2F%2Fhm.xiaomi.com%2Fwatch.do&_locale=zh_CN&response_type=code
@@ -42,9 +43,27 @@
 
 ## 获取秘钥
 > 当完成登录后，可以通过 **getHuamiToken()** 获取秘钥
+
 代码如下
 ``` java
     Suiteki.getHuamiToken();
     ArrayList al = Suiteki.getResultData();
-    for(int i = 0;i < al.length)
+    for(int i = 0;i < al.length;i++){
+        Map map = al.get(i);
+        String authkey = map.get("Authkey");//AuthKey的值
+        String mac = map.get("MacAddress");//对应的Mac地址
+        Log.d("test","authkey=" + authkey + "  " + "mac=" + mac);
+    }
+```
+> 假设有两个以上手环，则打印数据为如下格式
+
+``` log
+    authkey=XXXXXXXXXXXX  mac=XX:XX:XX:XX:XX:XX
+    authkey=XXXXXXXXXXXX  mac=XX:XX:XX:XX:XX:XX
+    ···
+```
+
+> 如果只有一个手环，则只会打印一行数据
+``` log
+    authkey=XXXXXXXXXXXX  mac=XX:XX:XX:XX:XX:XX
 ```

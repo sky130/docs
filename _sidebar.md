@@ -6,3 +6,4 @@
 * [Suiteki-Lib 开发](/suiteki.md)
   * [快速配置](/start-suiteki.md)
   * [华米方法](/huami-method-suiteki.md)
+  * [小米方法](/xiaomi-method-suiteki.md)
