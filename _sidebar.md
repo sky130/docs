@@ -5,4 +5,4 @@
   * [所有方法](/all-hitokoto.md)
 * [Suiteki-Lib 开发](/suiteki.md)
   * [快速配置](/start-suiteki.md)
-  * [所有方法](/method-suiteki.md)
+  * [华米方法](/huami-method-suiteki.md)

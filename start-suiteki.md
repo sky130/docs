@@ -16,7 +16,7 @@
 ## 在Java文件中引进
 ``` java
     ...
-    import static ml.sky233.suiteki.*;
+    import ml.sky233.Suiteki;
     ...
 ```
 
