@@ -1,7 +1,9 @@
 # 华米方法
 
-## 通过华米接口(Huami/Zepp)登录账号
 !> 该方法需要配置网络权限并且先检查网络环境避免报错
+----
+
+## 登录账号
 
 > 先通过 **loginHuami()** 登录华米(ZeppLife/Zepp)账号
 >
@@ -32,6 +34,7 @@
 
 ## 验证登录状态
 > 通过 **getResultCode()** 返回登录码
+
 代码如下
 ``` java
     if(Suiteki.getResultCode().equals("200")){
