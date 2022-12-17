@@ -6,7 +6,7 @@
 
 ## 在build.gradle中引进
 ``` java
-  ddependencies {
+  dependencies {
     ...
     implementation('ml.sky233.suiteki:Suiteki:1.0.5')   
     implementation("com.squareup.okhttp3:okhttp:4.9.1")
@@ -17,7 +17,15 @@
 ``` java
     ...
     import ml.sky233.Suiteki;
+    import ml.sky233.SuitekiObject;
     ...
+```
+
+## 构建一个Suiteki对象
+``` java
+    Suiteki suiteki = new Suiteki();//不带账号参数的构建对象
+    Suiteki suiteki_huami = new Suiteki("example@exmaple.com","exmaple123");//带有华米账号的构建对象
+    Suiteki suiteki_xiaomi = new Suiteki("code");//带有小米登录Code的构建对象
 ```
 
 ## 获取Demo

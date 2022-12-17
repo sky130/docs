@@ -1,7 +1,10 @@
 # 华米方法
 
+---
+
 !> 该方法需要配置网络权限并且先检查网络环境避免报错
-----
+
+---
 
 ## 登录账号
 
@@ -9,14 +12,47 @@
 >
 > 支持**小米账号**登录或**华米账号**(邮箱账号)登录
 
-登录代码如下
+华米登录代码如下
 ``` java
-    Suiteki.loginHuami("example@examlpe.com","exmalpe123");//华米账号登录
+    Suiteki suiteki = new Suiteki();//构建无参对象
+    Suiteki.loginHuami("example@examlpe.com","examlpe123");//华米账号登录
     // loginHuami(String email,String password)
     // 传入参数 Email 和 Password 即可登录华米账号
-    Suiteki.loginHuami("code");//小米账号登录
-    //传入小米账号返回的 Code 参数 即可登录华米账号
 ```
+或
+``` java
+    Suiteki suiteki = new Suiteki("example@example.com","example123");//构建带账号参数对象
+    suiteki.loginHuami();//登录
+```
+
+---
+
+小米登录代码如下
+``` java
+    Suiteki suiteki = new Suiteki();//构建无参对象
+    suiteki.loginHuami("code");//登录
+```
+或
+``` java
+    Suiteki suiteki = new Suiteki("code");//构建带小米登录Code对象
+    suiteki.loginHuami();//登录
+```
+还有更多方式
+``` java
+    Suiteki suiteki = new Suiteki();//构建无参对象
+    suiteki.setEmail("example@example.com");//设置邮箱
+    suiteki.setPassword("example123");//设置密码
+    suiteki.setCode("code");//设置小米登录Code
+    suiteki.loginHuami();//如果设置了邮箱密码则优先通过邮箱登录
+    if(suiteki.isEmpty()){
+        //空
+    }else{
+        //非空
+    }
+```
+
+---
+
 ## Code 获取方式
 > 先在**浏览器**中访问下面的链接
 ``` 
@@ -49,12 +85,12 @@
 
 代码如下
 ``` java
-    Suiteki.getHuamiToken();
-    ArrayList al = Suiteki.getResultData();
+    suiteki.getHuamiToken();
+    ArrayList<SuitekiObject> al = suiteki.getResultData();
     for(int i = 0;i < al.length;i++){
-        Map map = al.get(i);
-        String authkey = map.get("Authkey");//AuthKey的值
-        String mac = map.get("MacAddress");//对应的Mac地址
+        SuitekiObject sobj = al.get(i);
+        String authkey = sobj.getAuthKey();//AuthKey的值
+        String mac = sobj.getMac();//对应的Mac地址
         Log.d("test","authkey=" + authkey + "  " + "mac=" + mac);
     }
 ```
