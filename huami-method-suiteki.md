@@ -44,7 +44,7 @@
     suiteki.setPassword("example123");//设置密码
     suiteki.setCode("code");//设置小米登录Code
     suiteki.loginHuami();//如果设置了邮箱密码则优先通过邮箱登录
-    if(suiteki.isEmpty()){
+    if(suiteki.isUserEmpty()){// isUserEmpty 只能检查账号密码或Code是否为空
         //空
     }else{
         //非空
