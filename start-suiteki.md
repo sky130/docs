@@ -9,7 +9,7 @@
   dependencies {
     ...
     implementation('ml.sky233.suiteki:Suiteki:1.1.0')   
-    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation('com.squareup.okhttp3:okhttp:4.9.1')
 }
 ```
 
