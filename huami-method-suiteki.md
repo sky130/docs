@@ -2,7 +2,7 @@
 
 ---
 
-!> 该方法需要配置网络权限并且先检查网络环境避免报错
+!> 该方法需要配置网络权限并且先检查网络环境避免报错,而且需要将关于网络操作的方法用线程运行
 
 ---
 
@@ -87,7 +87,7 @@
 ``` java
     suiteki.getHuamiToken();
     ArrayList<SuitekiObject> al = suiteki.getResultData();
-    for(int i = 0;i < al.length;i++){
+    for(int i = 0; i < al.size(); i++){
         SuitekiObject sobj = al.get(i);
         String authkey = sobj.getAuthKey();//AuthKey的值
         String mac = sobj.getMac();//对应的Mac地址

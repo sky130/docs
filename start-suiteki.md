@@ -8,7 +8,7 @@
 ``` java
   dependencies {
     ...
-    implementation('ml.sky233.suiteki:Suiteki:1.0.5')   
+    implementation('ml.sky233.suiteki:Suiteki:1.1.0')   
     implementation("com.squareup.okhttp3:okhttp:4.9.1")
 }
 ```
@@ -22,6 +22,9 @@
 ```
 
 ## 构建一个Suiteki对象
+
+!> 正常开发时不一定需要事先配置账号密码,可以稍后配置
+
 ``` java
     Suiteki suiteki = new Suiteki();//不带账号参数的构建对象
     Suiteki suiteki_huami = new Suiteki("example@exmaple.com","exmaple123");//带有华米账号的构建对象
