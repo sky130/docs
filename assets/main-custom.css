@@ -11,7 +11,7 @@
 
     --cover-button-background--hover                   : #6186FC;
     --cover-button-color--hover                        : #FFF;
-    --cover-button-primary-background--hover           : #026b61;
+    --cover-button-primary-background--hover           : #7192FD;
     --cover-button-padding                             : 1em 4rem;
     --cover-button-border-radius                       : 2em;
     
@@ -54,7 +54,7 @@
 
     /* Links */
     --link-color                        : #6186FC;
-    --link-color--hover                 : #6186FC;
+    --link-color--hover                 : #7192FD;
     --link-text-decoration              : underline;
 
     /* Example ============================================================================= */
