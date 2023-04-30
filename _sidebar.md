@@ -7,3 +7,6 @@
   * [快速配置](/Suiteki/start.md)
   * [华米方法](/Suiteki/huami-method.md)
   * [小米方法](/Suiteki/xiaomi-method.md)
+* [Choeski 音源包开发](/Choeski/index.md)
+  * [快速配置](/Choeski/start.md)
+  * [全部命令](/Choeski/more.md)
