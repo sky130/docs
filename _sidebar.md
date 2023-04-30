@@ -10,3 +10,4 @@
 * [Choeski 音源包开发](/Choeski/index.md)
   * [快速配置](/Choeski/start.md)
   * [全部命令](/Choeski/more.md)
+  * [情景配置](/Choeski/scene.md)
