@@ -1,5 +1,5 @@
 * [Hitokoto-Utils-Java 开发](/Hitokoto/index.md)
-  * [快速配置](/Hitokoto/start/.md) 
+  * [快速配置](/Hitokoto/start.md) 
   * [参数变量](/Hitokoto/variable.md)
   * [示例写法](/Hitokoto/example.md)
   * [所有方法](/Hitokoto/all.md)
