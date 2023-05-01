@@ -39,21 +39,21 @@
 
 上面的文件已经包含了绝大多数情况的用法,下面的表格才是全部用法
 
-| 属性名 | 数据类型 | 说明 |
-| ------ | -------- | ---- |
-| duration | Int | 音频时长，单位为秒 |
-| startPlayTime | Int? | 音频播放的开始时间，单位为秒，可空 |
-| totalEndTime | Int? | 音频结束的时间，单位为秒，可空 |
-| audioName | String? | 音频名称，可空 |
-| names | List<String>? | 音频名称列表，可空 |
-| isLineAudio | Boolean? | 是否为线性音频，可空 |
-| isPointAudio | Boolean? | 是否为点状音频，可空 |F
-| configVolume | Double? | 配置音量，范围为0-1，可空 |
-| frequency | Int? | 音频频率，单位为Hz，可空 |
-| pitch | Double? | 音高，可空 |
-| speed | Double? | 播放速度，可空 |
-| isRawRes | Boolean? | 是否为原始资源，可空 |
-| volume | Double | 音量，范围为0-1 |
+| 属性名        | 数据类型     | 说明                 |
+| ------------- | ------------ | -------------------- |
+| duration      | Int          | 音频时长，单位为秒   |
+| startPlayTime | Int?         | 音频播放的开始时间，单位为秒，可空 |
+| totalEndTime  | Int?         | 音频结束的时间，单位为秒，可空 |
+| audioName     | String?      | 音频名称，可空       |
+| names         | List<String>?| 音频名称列表，可空   |
+| isLineAudio   | Boolean?     | 是否为线性音频，可空 |
+| isPointAudio  | Boolean?     | 是否为点状音频，可空 |
+| configVolume  | Double?      | 配置音量，范围为0-1，可空 |
+| frequency     | Int?         | 音频频率，单位为Hz，可空 |
+| pitch         | Double?      | 音高，可空           |
+| speed         | Double?      | 播放速度，可空       |
+| isRawRes      | Boolean?     | 是否为原始资源，可空 |
+| volume        | Double       | 音量，范围为0-1     |
 
 ---
 So, enjoy it~
