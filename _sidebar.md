@@ -11,3 +11,5 @@
   * [快速配置](/Choseki/start.md)
   * [全部命令](/Choseki/more.md)
   * [情景配置](/Choseki/scene.md)
+* [ZeroCode 开发](/ZeroCode/index.md)
+  * [语言介绍](/ZeroCode/start.md)
