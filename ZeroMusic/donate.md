@@ -1,8 +1,8 @@
 # 微信的二维码过期了，请在手机上面扫码或打开此链接进行查看最新二维码
 
-http://sky2333.top/docs/#/ZeroMusic/donate
+https://sky2333.top/docs/#/ZeroMusic/donate
 
-[](‎IMG_20250123_140731.png)
+[](‎.\IMG_20250123_140731.png)
 
 # 零度音乐Pro调整决定
 
