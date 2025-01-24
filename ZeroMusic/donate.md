@@ -2,7 +2,7 @@
 
 https://sky2333.top/docs/#/ZeroMusic/donate
 
-![](‎https://sky2333.top/docs/ZeroMusic/IMG_20250123_140731.png)
+![](IMG_20250123_140731.png)
 
 # 零度音乐Pro调整决定
 
